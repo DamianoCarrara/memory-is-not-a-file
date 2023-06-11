@@ -23,7 +23,7 @@ export const PhotoListItem = ({ photo }: PhotoListItemProps) => {
         alt={title}
         title={title} 
         priority={true}
-        onLoadingComplete={() => dimbox.init()} 
+        onLoadingComplete={(img) => dimbox.init()} 
       />
     </Link>
   )
