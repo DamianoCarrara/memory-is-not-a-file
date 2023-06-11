@@ -25,7 +25,7 @@ export const MasonryGrid = ({
       breakpointCols={breakpointCols}
       className={classes.container}
       columnClassName={classes.column}
-      data-dimbox="my-gallery"
+      
     >
       {children}
     </Masonry>

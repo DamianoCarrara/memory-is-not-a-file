@@ -23,7 +23,7 @@ interface PhotoListProps {
 }
 
 // A threshold value in px defining when the infinite scroll will call next page of photos.
-const infiniteScrollThreshold = 500
+const infiniteScrollThreshold = 250
 
 export const PhotosList = ({
   photos,
@@ -77,7 +77,6 @@ export const PhotosList = ({
       scrollY > pageHeight - windowHeight - infiniteScrollThreshold
     ) {
       void fetchNextPage()
-      
     }
   }, [
     pageWidth,

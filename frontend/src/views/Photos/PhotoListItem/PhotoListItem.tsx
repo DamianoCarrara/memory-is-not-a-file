@@ -13,14 +13,13 @@ export const PhotoListItem = ({ photo }: PhotoListItemProps) => {
   const { slug, image, title } = photo
 
   return (
-    <Link href={image.url} className={`${classes.photo}`} data-dimbox="my-gallery">
+    <Link href={image.url} className={`${classes.photo}`} data-dimbox="my-gallery" data-dimbox-caption={title}>
       <Image
         src={image.url}
         width={500}
         height={500 / image.aspectRatio}
         alt={title}
         title={title}
-        
       />
     </Link>
   )

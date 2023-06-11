@@ -62,14 +62,18 @@ export default class JssDocument extends Document {
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f1bb37" />
           <link rel="stylesheet" href="/dimbox.css" />
+
           <meta name="msapplication-TileColor" content="#f1bb37" />
           <meta name="theme-color" content="#f1bb37" />
         </Head>
         <body>
           <Main />
+
           <NextScript />
-          <script src="/dimbox.min.js" defer></script>
-        
+
+          <script src="/dimbox.min.js"></script>
+
+
         </body>
       </Html>
     )

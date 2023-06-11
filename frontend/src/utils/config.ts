@@ -11,7 +11,7 @@ export const { siteName } = vars
 export const payoff = 'Stories in images. Images for stories.'
 export const getSeoTitleSiteName = (title: string) =>
   `${title} | ${vars.siteName}`
-export const photosPerPage = 16
+export const photosPerPage = 30
 export const siteUrl = isProd
   ? 'https://memory-is-not-a-file.vercel.app'
   : 'http://localhost:3000'
