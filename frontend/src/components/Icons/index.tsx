@@ -1,0 +1,6 @@
+export { default as Icon } from './Icon'
+export { default as Spinner } from './Spinner'
+export { default as AngleDown } from './AngleDown'
+export { default as XMark } from './XMark'
+export { default as Minus } from './Minus'
+export { default as Plus } from './Plus'
