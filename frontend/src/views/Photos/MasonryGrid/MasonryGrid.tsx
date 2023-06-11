@@ -25,7 +25,6 @@ export const MasonryGrid = ({
       breakpointCols={breakpointCols}
       className={classes.container}
       columnClassName={classes.column}
-      
     >
       {children}
     </Masonry>

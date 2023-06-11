@@ -59,6 +59,8 @@ export const PhotosList = ({
     return res
   }
 
+  
+
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
     useInfiniteQuery(['photos', category.slug.current], fetchPhotos, {
       enabled: false,
@@ -101,6 +103,7 @@ export const PhotosList = ({
   return photos ? (
     <>
       <MasonryGrid>
+        
         {photos.map((photo) => (
           <PhotoListItem photo={photo} key={photo.slug.current} />
         ))}
@@ -111,6 +114,7 @@ export const PhotosList = ({
               <PhotoListItem photo={p} key={p.slug.current} />
             ))
           )}
+         
       </MasonryGrid>
 
       {isFetchingNextPage && (

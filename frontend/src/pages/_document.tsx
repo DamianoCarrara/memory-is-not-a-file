@@ -68,11 +68,11 @@ export default class JssDocument extends Document {
         </Head>
         <body>
           <Main />
-
+         
+         
           <NextScript />
-
           <script src="/dimbox.min.js"></script>
-
+          <script src="/dimbox.min2.js"></script>
 
         </body>
       </Html>

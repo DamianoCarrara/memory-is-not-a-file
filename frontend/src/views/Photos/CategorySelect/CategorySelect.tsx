@@ -34,7 +34,7 @@ export const CategorySelect = ({ slug, categories }: CategorySelectProps) => {
   }, [slug])
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="selection">
       <Select
         styles={selectStyle}
         components={{ DropdownIndicator }}
@@ -42,11 +42,11 @@ export const CategorySelect = ({ slug, categories }: CategorySelectProps) => {
         onChange={(option) => {
           if (option && slug !== option.value) {
             setSelectedOption(option)
-
+            
             void router.push(
               option.value === 'home'
-                ? locations.home
-                : locations.category(option.value)
+                ? locations.home + '#home' 
+                : locations.category(option.value) + '#' + option.value
             )
           }
         }}

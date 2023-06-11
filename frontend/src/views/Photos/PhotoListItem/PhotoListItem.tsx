@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/legacy/image'
 import { PhotoBase } from '../../../types'
@@ -13,14 +14,19 @@ export const PhotoListItem = ({ photo }: PhotoListItemProps) => {
   const { slug, image, title } = photo
 
   return (
-    <Link href={image.url} className={`${classes.photo}`} data-dimbox="my-gallery" data-dimbox-caption={title}>
+
+    <Link data-dimbox="my-gallery" href={image.url} className={`${classes.photo}`}  data-dimbox-caption={title} id="ok1">
       <Image
         src={image.url}
         width={500}
         height={500 / image.aspectRatio}
         alt={title}
-        title={title}
+        title={title} 
+        priority={true}
+        onLoadingComplete={(img) => dimbox.init()} 
       />
     </Link>
   )
+  
+  
 }
