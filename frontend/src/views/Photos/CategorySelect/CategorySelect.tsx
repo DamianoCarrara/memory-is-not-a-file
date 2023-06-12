@@ -44,8 +44,8 @@ export const CategorySelect = ({ slug, categories }: CategorySelectProps) => {
             setSelectedOption(option)   
             void router.push(
               option.value === 'home'
-              ? locations.home
-                : locations.category(option.value) 
+               ? locations.home 
+               : locations.category(option.value) 
             )
           }
         }}
