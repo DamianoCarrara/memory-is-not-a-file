@@ -15,7 +15,6 @@ import { Icon, Spinner } from '../../../components/Icons'
 import { useStore } from '../../../utils/store'
 import { defaultLocale } from '../../../utils/config'
 
-
 interface PhotoListProps {
   photos: PhotosResponse
   category: Category
@@ -59,8 +58,6 @@ export const PhotosList = ({
     return res
   }
 
-  
-
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
     useInfiniteQuery(['photos', category.slug.current], fetchPhotos, {
       enabled: false,
@@ -102,8 +99,7 @@ export const PhotosList = ({
 
   return photos ? (
     <>
-      <MasonryGrid>
-        
+      <MasonryGrid> 
         {photos.map((photo) => (
           <PhotoListItem photo={photo} key={photo.slug.current} />
         ))}
@@ -116,7 +112,6 @@ export const PhotosList = ({
           )}
          
       </MasonryGrid>
-
       {isFetchingNextPage && (
         <ListMessage>
           {t('Loading')} <Icon icon={Spinner} spin />
