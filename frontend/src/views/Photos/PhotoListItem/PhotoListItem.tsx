@@ -1,4 +1,4 @@
-declare var dimbox: any
+declare const dimbox: any
 import Link from 'next/link'
 import Image from 'next/legacy/image'
 import { PhotoBase } from '../../../types'
