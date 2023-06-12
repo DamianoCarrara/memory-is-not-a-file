@@ -5,11 +5,11 @@
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "next/core-web-vitals"
-    //"prettier"
+    "next/core-web-vitals",
+    "prettier"
   ],
   "plugins": [
-    //"prettier"
+    "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
