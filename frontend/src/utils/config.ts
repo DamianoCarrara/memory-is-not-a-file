@@ -13,7 +13,7 @@ export const getSeoTitleSiteName = (title: string) =>
   `${title} | ${vars.siteName}`
 export const photosPerPage = 90
 export const siteUrl = isProd
-  ? 'https://memory-is-not-a-file.vercel.app'
+  ? 'https://memoryisnotafile.com/'
   : 'http://localhost:3000'
 export const defaultLocale = i18n.defaultLocale as Languages
 export const locales = i18n.locales as Languages[]
