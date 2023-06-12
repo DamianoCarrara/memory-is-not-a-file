@@ -1,5 +1,4 @@
 declare var dimbox: any
-'use client'
 import Link from 'next/link'
 import Image from 'next/legacy/image'
 import { PhotoBase } from '../../../types'
