@@ -109,8 +109,7 @@ export const PhotosList = ({
             nextPhotos.map((p) => (
               <PhotoListItem photo={p} key={p.slug.current} />
             ))
-        )}
-         
+          )}   
       </MasonryGrid>
       {isFetchingNextPage && (
         <ListMessage>

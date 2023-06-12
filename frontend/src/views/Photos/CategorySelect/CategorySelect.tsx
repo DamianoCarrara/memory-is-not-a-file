@@ -43,7 +43,9 @@ export const CategorySelect = ({ slug, categories }: CategorySelectProps) => {
           if (option && slug !== option.value) {
             setSelectedOption(option)   
             void router.push(
-              option.value === 'home' ? locations.home : locations.category(option.value) 
+              option.value === 'home'
+              ? locations.home
+                : locations.category(option.value) 
             )
           }
         }}
