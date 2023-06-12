@@ -23,7 +23,6 @@ export const PhotoListItem = ({ photo }: PhotoListItemProps) => {
         height={500 / image.aspectRatio}
         alt={title}
         title={title} 
-        priority={true}
         onLoadingComplete={(img) => dimbox.init()} 
       />
     </Link>
