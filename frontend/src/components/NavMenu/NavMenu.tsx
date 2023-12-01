@@ -127,7 +127,8 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
           </li>
         </ul>
         <div className="igig"><a href="https://www.instagram.com/memoryisnotafile/" target="_blank" >
-          <img src="https://memoryisnotafile.com/_next/static/media/iglogo.png" className="imgimg"/>
+
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpsfonttk.com%2Fwp-content%2Fuploads%2F2020%2F09%2FInstagram-Logo-PNG.png&f=1&nofb=1&ipt=ce5eaaaa41ab572ae7622be9ee0326f4ded764a0977ed4ecef816ed4b0b803c3&ipo=images" className="imgimg"/>
          
           </a>
 </div>
