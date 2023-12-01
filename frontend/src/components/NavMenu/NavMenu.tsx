@@ -1,4 +1,3 @@
-import styles from './NavMenu.module.css'
 import { ReactNode, useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useWindowWidth } from '@react-hook/window-size/throttled'
