@@ -107,7 +107,6 @@ export const useStyles = createUseStyles((t: typeof theme) => ({
     borderRadius: '.125rem',
   },
 
- 
 
   hamLine1: {
     top: '.125rem',
