@@ -1,3 +1,4 @@
+import styles from './NavMenu.module.css'
 import { ReactNode, useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useWindowWidth } from '@react-hook/window-size/throttled'
@@ -8,7 +9,6 @@ import { theme } from '../../utils/theme'
 import { useStyles } from './NavMenu.styles'
 import { locations, locationsBase } from '../../utils/locations'
 import { isFeatureEnabled } from '../../utils/features'
-import styles from './NavMenu.module.css'
 
 interface NavMenuProps {
   renderLanguageSwitcher: (props: {
