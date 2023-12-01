@@ -6,6 +6,7 @@ import { clsx } from 'clsx'
 import { useRouter } from 'next/router'
 import { theme } from '../../utils/theme'
 import { useStyles } from './NavMenu.styles'
+import { useStyles } from './NavMenu2.styles'
 import { locations, locationsBase } from '../../utils/locations'
 import { isFeatureEnabled } from '../../utils/features'
 
