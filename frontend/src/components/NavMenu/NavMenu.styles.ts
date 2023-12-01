@@ -107,6 +107,20 @@ export const useStyles = createUseStyles((t: typeof theme) => ({
     borderRadius: '.125rem',
   },
 
+  igig: {
+    width: '30px',
+    position: 'absolute',
+    marginBottom: '-8px',
+    bottom: '25px',
+    right: '25px',
+  },
+
+  imgimg: {
+    maxWidth: '100%',
+    display: 'block',
+    marginTop: '10px',
+  },
+
   hamLine1: {
     top: '.125rem',
   },
