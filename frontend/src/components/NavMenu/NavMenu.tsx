@@ -126,12 +126,7 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
             {renderLanguageSwitcher({ setIsMobileMenuOpen })}
           </li>
         </ul>
-        <div className="igig"><a href="https://www.instagram.com/memoryisnotafile/" target="_blank" >
-
-          <img src="https://pluspng.com/img-png/instagram-png-instagram-png-icon-1024.png" className="imgimg"/>
-         
-          </a>
-</div>
+       
       </div>
     </nav>
   )
