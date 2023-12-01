@@ -8,8 +8,6 @@ import { theme } from '../../utils/theme'
 import { useStyles } from './NavMenu.styles'
 import { locations, locationsBase } from '../../utils/locations'
 import { isFeatureEnabled } from '../../utils/features'
-import Image from 'next/legacy/image'
-import igPath from '../../assets/iglogo.png'
 
 interface NavMenuProps {
   renderLanguageSwitcher: (props: {
@@ -129,12 +127,8 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
           </li>
         </ul>
         <div className="igig"><a href="https://www.instagram.com/memoryisnotafile/" target="_blank" >
-          
-          <Image
-                src={igPath as string}
-                layout="responsive"
-                lassName="imgimg"
-              />
+          <img src="https://memoryisnotafile.com/_next/static/media/iglogo.png" className="imgimg"/>
+         
           </a>
 </div>
       </div>
