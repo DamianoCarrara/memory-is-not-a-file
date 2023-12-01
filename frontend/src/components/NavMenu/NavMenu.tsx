@@ -8,6 +8,7 @@ import { theme } from '../../utils/theme'
 import { useStyles } from './NavMenu.styles'
 import { locations, locationsBase } from '../../utils/locations'
 import { isFeatureEnabled } from '../../utils/features'
+import styles from './NavMenu.module.css'
 
 interface NavMenuProps {
   renderLanguageSwitcher: (props: {
@@ -126,10 +127,10 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
             {renderLanguageSwitcher({ setIsMobileMenuOpen })}
           </li>
         </ul>
-        <div style={ { width: '30px'}, {position:'absolute'}, {bottom:'25px'}, {right:'25px'} }>
+        <div className="igig">
           <a href="https://www.instagram.com/memoryisnotafile/" target="_blank" >
 
-          <img src="https://pluspng.com/img-png/instagram-png-instagram-png-icon-1024.png" style={ { maxWidth: '100%'} }/>
+          <img src="https://pluspng.com/img-png/instagram-png-instagram-png-icon-1024.png" className="imgimg"/>
          
           </a>
 </div>
