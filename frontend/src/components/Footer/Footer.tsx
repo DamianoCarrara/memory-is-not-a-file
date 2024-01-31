@@ -27,7 +27,7 @@ export const Footer = ({ languageSwitcher, yellowBackground }: FooterProps) => {
     >
       <Container fullWidth>
         <span className={classes.item}>
-          Copyright © {currentYear} {siteName}
+          Copyright © 2023 {siteName}
         </span>
 
         {isFeatureEnabled('eCommerce') && (
