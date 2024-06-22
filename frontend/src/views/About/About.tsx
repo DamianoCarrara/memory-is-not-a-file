@@ -1,26 +1,26 @@
-import { NextPage } from 'next'
-import { useTranslation, Trans } from 'next-i18next'
-import Image from 'next/image'
-import { PageTemplate } from '../../components/PageTemplate/PageTemplate'
-import { PageTitle } from '../../components/PageTitle/PageTitle'
-import { Container } from '../../components/Container/Container'
-import { getSeoTitleSiteName } from '../../utils/config'
-import { locations } from '../../utils/locations'
-import { useStyles } from './About.styles'
-import mainImage from './images/main-image.jpg'
+import { NextPage } from "next";
+import { useTranslation, Trans } from "next-i18next";
+import Image from "next/image";
+import { PageTemplate } from "../../components/PageTemplate/PageTemplate";
+import { PageTitle } from "../../components/PageTitle/PageTitle";
+import { Container } from "../../components/Container/Container";
+import { getSeoTitleSiteName } from "../../utils/config";
+import { locations } from "../../utils/locations";
+import { useStyles } from "./About.styles";
+import mainImage from "./images/main-image.jpg";
 
 export const About: NextPage = () => {
-  const { t } = useTranslation('about')
-  const classes = useStyles()
+  const { t } = useTranslation("about");
+  const classes = useStyles();
 
   return (
     <PageTemplate
       path={locations.about}
-      htmlTitle={getSeoTitleSiteName(t('title'))}
+      htmlTitle={getSeoTitleSiteName(t("title"))}
       yellowBackground
     >
       <article>
-        <PageTitle title={t('title')} />
+        <PageTitle title={t("title")} />
 
         <Container>
           <p className={classes.intro}>
@@ -37,6 +37,13 @@ export const About: NextPage = () => {
 
           <p className={classes.intro}>Damiano Carrara</p>
 
+          <p className={classes.video}>
+            <video controls>
+              <source src="https://weblario.it/xxx/minaf.mp4" />
+              Your browser does not support the video tag...
+            </video>
+          </p>
+
           <div className={classes.mainImage}>
             <Image src={mainImage} alt="" fill />
           </div>
@@ -44,19 +51,19 @@ export const About: NextPage = () => {
           <ol className={classes.bulletPoints}>
             <li>
               <span>1.</span>
-              {t('bulletPoints1')}
+              {t("bulletPoints1")}
             </li>
             <li>
               <span>2.</span>
-              {t('bulletPoints2')}
+              {t("bulletPoints2")}
             </li>
             <li>
               <span>3.</span>
-              {t('bulletPoints3')}
+              {t("bulletPoints3")}
             </li>
           </ol>
         </Container>
       </article>
     </PageTemplate>
-  )
-}
+  );
+};
