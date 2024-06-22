@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { theme } from '../../utils/theme'
+import { createUseStyles } from "react-jss";
+import { theme } from "../../utils/theme";
 
 export const useStyles = createUseStyles((t: typeof theme) => ({
   intro: {
@@ -11,32 +11,40 @@ export const useStyles = createUseStyles((t: typeof theme) => ({
   },
 
   mainImage: {
-    margin: ['2rem', 0],
-    position: 'relative',
-    height: '16rem',
+    margin: ["2rem", 0],
+    position: "relative",
+    height: "16rem",
 
-    '& img': {
-      objectFit: 'cover',
+    "& img": {
+      objectFit: "cover",
     },
 
     [`@media (min-width: ${t.mediaBpUpMd})`]: {
-      height: '25rem',
+      height: "25rem",
+    },
+  },
+
+  video: {
+    "& > video": {
+      width: "100%",
+      maxWidth: "100%",
+      margin: "2rem auto",
     },
   },
 
   bulletPoints: {
-    display: 'flex',
-    flexDirection: 'column',
+    display: "flex",
+    flexDirection: "column",
     padding: 0,
-    listStyle: 'none',
+    listStyle: "none",
     margin: `0 ${t.negativeGridGutter} ${t.gridGutter}`,
 
     [`@media (min-width: ${t.mediaBpUpLg})`]: {
-      flexDirection: 'row',
+      flexDirection: "row",
     },
 
-    '& > li': {
-      flex: '1',
+    "& > li": {
+      flex: "1",
       margin: `0 ${t.gridGutter} 2rem`,
       paddingBottom: t.gridGutter,
       borderBottom: `0.4rem solid ${t.black}`,
@@ -46,11 +54,11 @@ export const useStyles = createUseStyles((t: typeof theme) => ({
       },
     },
 
-    '& > li > span': {
-      display: 'block',
+    "& > li > span": {
+      display: "block",
       color: t.white,
-      fontSize: '3rem',
+      fontSize: "3rem",
       fontWeight: t.fontWeightBold,
     },
   },
-}))
+}));
