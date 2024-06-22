@@ -39,7 +39,7 @@ export const About: NextPage = () => {
 
           <p className={classes.video}>
             <video
-              controls>
+              controls poster={mainImage} >
               <source src="https://weblario.it/xxx/minaf.mp4" />
               Your browser does not support the video tag...
             </video>
