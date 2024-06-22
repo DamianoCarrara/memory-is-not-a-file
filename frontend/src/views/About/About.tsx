@@ -39,7 +39,8 @@ export const About: NextPage = () => {
 
           <p className={classes.video}>
             <video
-              controls poster={mainImage} >
+              controls  preload
+              poster="https://memoryisnotafile.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmain-image.6e6a7596.jpg&w=3840&q=75" >
               <source src="https://weblario.it/xxx/minaf.mp4" />
               Your browser does not support the video tag...
             </video>
