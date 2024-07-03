@@ -41,7 +41,9 @@
 }
 
 .mainGalList li .mediumlink h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin-top: 0;
+  color: #f1bb38;
   text-decoration: none;
   border-bottom: 1px solid;
   display: block;
