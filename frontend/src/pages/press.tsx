@@ -29,16 +29,17 @@ const Press = ({ presses }) => {
               slug && (
                 <li key={_id}>
                   <div className={styles.mediumlinkimg}>
-                    <Link href={`/press/${encodeURIComponent(slug.current)}`}>
+                    <a
+                      href={urlFor(photo).url()}
+                      data-dimbox="my-gallery"
+                      data-dimbox-caption={medium}
+                      id="ok1"
+                    >
                       {photo && <img src={urlFor(photo).url()} />}
-                    </Link>
+                    </a>
                   </div>
                   <div className={styles.mediumlink}>
-                    <h3>
-                      <Link href={`/press/${encodeURIComponent(slug.current)}`}>
-                        {testata}
-                      </Link>
-                    </h3>
+                    <h3>{testata}</h3>
                     <h3>{medium}</h3>
                     <p>{description}</p>
 
