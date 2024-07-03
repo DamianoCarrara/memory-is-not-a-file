@@ -1,41 +1,41 @@
-import { ReactNode, useEffect, useState } from 'react'
-import { useTranslation } from 'next-i18next'
-import { useWindowWidth } from '@react-hook/window-size/throttled'
-import Link from 'next/link'
-import { clsx } from 'clsx'
-import { useRouter } from 'next/router'
-import { theme } from '../../utils/theme'
-import { useStyles } from './NavMenu.styles'
-import { locations, locationsBase } from '../../utils/locations'
-import { isFeatureEnabled } from '../../utils/features'
+import { ReactNode, useEffect, useState } from "react";
+import { useTranslation } from "next-i18next";
+import { useWindowWidth } from "@react-hook/window-size/throttled";
+import Link from "next/link";
+import { clsx } from "clsx";
+import { useRouter } from "next/router";
+import { theme } from "../../utils/theme";
+import { useStyles } from "./NavMenu.styles";
+import { locations, locationsBase } from "../../utils/locations";
+import { isFeatureEnabled } from "../../utils/features";
 
 interface NavMenuProps {
   renderLanguageSwitcher: (props: {
-    setIsMobileMenuOpen: (isMobileMenuOpen: boolean) => void
-  }) => ReactNode
+    setIsMobileMenuOpen: (isMobileMenuOpen: boolean) => void;
+  }) => ReactNode;
 }
 
 export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
-  const { t } = useTranslation('common')
-  const { pathname } = useRouter()
-  const classes = useStyles()
-  const windowWidth = useWindowWidth()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(true)
+  const { t } = useTranslation("common");
+  const { pathname } = useRouter();
+  const classes = useStyles();
+  const windowWidth = useWindowWidth();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   const isHomeActive =
     pathname === locations.home ||
     pathname.includes(locationsBase.category) ||
-    pathname.includes(locationsBase.photo)
+    pathname.includes(locationsBase.photo);
 
   useEffect(() => {
     if (windowWidth >= parseInt(theme.mediaMinWidthDesktop, 10)) {
-      setIsMobile(false)
-      setIsMobileMenuOpen(false)
+      setIsMobile(false);
+      setIsMobileMenuOpen(false);
     } else {
-      setIsMobile(true)
+      setIsMobile(true);
     }
-  }, [windowWidth])
+  }, [windowWidth]);
 
   return (
     <nav className={classes.nav} role="navigation" aria-label="Main menu">
@@ -47,7 +47,7 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
         )}
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         aria-controls="main-menu"
-        aria-label={t('Open the menu')}
+        aria-label={t("Open the menu")}
       >
         <span
           className={clsx(classes.hamLine, classes.hamLine1)}
@@ -77,7 +77,7 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
               className={clsx(classes.link, isHomeActive && classes.active)}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {t('Photo album')}
+              {t("Photo album")}
             </Link>
           </li>
 
@@ -90,7 +90,20 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
               )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {t('About')}
+              {t("About")}
+            </Link>
+          </li>
+
+          <li className={classes.listItem}>
+            <Link
+              href={locations.press}
+              className={clsx(
+                classes.link,
+                pathname.includes(locationsBase.press) && classes.active
+              )}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t("Press")}
             </Link>
           </li>
 
@@ -103,11 +116,11 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
               )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {t('Contacts')}
+              {t("Contacts")}
             </Link>
           </li>
 
-          {isFeatureEnabled('eCommerce') && (
+          {isFeatureEnabled("eCommerce") && (
             <li className={classes.listItem}>
               <Link
                 href={locations.buy}
@@ -117,7 +130,7 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
                 )}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('Buy')}
+                {t("Buy")}
               </Link>
             </li>
           )}
@@ -127,13 +140,14 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
           </li>
         </ul>
         <div className="igig">
-          <a href="https://www.instagram.com/memoryisnotafile/" target="_blank" >
-
-          <img src="https://pluspng.com/img-png/instagram-png-instagram-png-icon-1024.png" className="imgimg"/>
-         
+          <a href="https://www.instagram.com/memoryisnotafile/" target="_blank">
+            <img
+              src="https://pluspng.com/img-png/instagram-png-instagram-png-icon-1024.png"
+              className="imgimg"
+            />
           </a>
-</div>
+        </div>
       </div>
     </nav>
-  )
-}
+  );
+};

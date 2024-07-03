@@ -2,7 +2,7 @@ export type {
   Category,
   CategoriesResponse,
   CategoryResponse,
-} from './categories'
+} from "./categories";
 export type {
   SellingOption,
   Image,
@@ -10,7 +10,8 @@ export type {
   PhotoResponse,
   PhotoBase,
   PhotoComplete,
-} from './photos'
-export type { Languages } from './i18n'
-export type { MarkdownPageData } from './markdownPages'
-export type { GetStaticProps } from './nextJs'
+} from "./photos";
+export type { PresssResponse } from "./press";
+export type { Languages } from "./i18n";
+export type { MarkdownPageData } from "./markdownPages";
+export type { GetStaticProps } from "./nextJs";
