@@ -39,7 +39,7 @@ const Press = ({ presses }) => {
                     </a>
                   </div>
                   <div className={styles.mediumlink}>
-                    <h3>{testata}</h3>
+                    <h2>{testata}</h2>
                     <h3>{medium}</h3>
                     <p>{description}</p>
 
