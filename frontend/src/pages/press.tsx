@@ -10,7 +10,7 @@ import styles from "../../ui/gal.module.css";
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
-const Press = ({ presses }) => {
+const Press = ({ presses }) => { 
   return (
     <PageTemplate path="/press">
       <PageTitle fullWidth title="Press" />
