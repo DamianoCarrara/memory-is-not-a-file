@@ -26,7 +26,7 @@ const Press = ({ presses }) => {
               testata = "",
               pressGallery = [],
             }) =>
-              slug && (
+              _id && (
                 <li key={_id} id={_id}>
                   <div className={styles.mediumlinkimg}>
                     <a
