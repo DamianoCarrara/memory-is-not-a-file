@@ -27,13 +27,13 @@ const Press = ({ presses }) => {
               pressGallery = [],
             }) =>
               slug && (
-                <li key={_id}>
+                <li key={_id} id={_id}>
                   <div className={styles.mediumlinkimg}>
                     <a
                       href={urlFor(photo).url()}
                       data-dimbox="my-gallery"
                       data-dimbox-caption={medium}
-                      id="ok1"
+                      id={_id}
                     >
                       {photo && <img src={urlFor(photo).url()} />}
                     </a>
@@ -51,7 +51,7 @@ const Press = ({ presses }) => {
                               href={urlFor(presgal).url()}
                               data-dimbox="my-gallery"
                               data-dimbox-caption={medium}
-                              id="ok1"
+                              id={_id}
                             >
                               <img src={urlFor(presgal).url()} />
                             </a>
