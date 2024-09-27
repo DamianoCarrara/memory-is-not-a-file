@@ -28,7 +28,7 @@
   margin: 1rem;
 }
 
-.mainGalList {
+.mainGalList, .mainGalListx {
   margin: 1rem auto;
   align-items: start;
   padding: 1rem;
@@ -36,11 +36,16 @@
   list-style: none;
 }
 
-.mainGalList li {
+.mainGalList li, .mainGalListx li {
   margin-bottom: 6rem;
 }
 
-.mainGalList li .mediumlink h2 {
+.mainGalListx  {
+  gap: 2rem
+}
+
+.mainGalList li .mediumlink h2,
+.mainGalListx li .mediumlink h2 {
   font-size: 2.6rem;
   margin-top: 0;
   color: #f1bb38;
@@ -49,16 +54,19 @@
   display: block;
 }
 
-.mainGalList li .mediumlink p {
+.mainGalList li .mediumlink p,
+.mainGalListx li .mediumlink p {
   margin: 1rem auto;
 }
 
-.mainGalList li .mediumlinkimg img {
+.mainGalList li .mediumlinkimg img,
+.mainGalListx li .mediumlinkimg img {
   max-width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-  .mainGalList li {
+  .mainGalList li,
+    .mainGalListx li  {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -68,6 +76,11 @@
   .mainGalList li .mediumlink {
     width: 70%;
   }
+  .mainGalListx li .mediumlink,
+  .mainGalListx li .mediumlinkimg  {
+    width: 50%;
+  }
+
   .mainGalList li .mediumlinkimg {
     width: 28%;
   }
