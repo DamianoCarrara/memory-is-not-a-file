@@ -12,6 +12,7 @@ export type {
   PhotoComplete,
 } from "./photos";
 export type { PresssResponse } from "./press";
+export type { NewsResponse } from "./news";
 export type { Languages } from "./i18n";
 export type { MarkdownPageData } from "./markdownPages";
 export type { GetStaticProps } from "./nextJs";
