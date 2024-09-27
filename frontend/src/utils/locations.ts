@@ -5,6 +5,7 @@ export const locationsBase = {
   contacts: `/contacts`,
   press: "/press",
   buy: `/buy`,
+  news: `/news`,
 };
 
 export const locations = {
