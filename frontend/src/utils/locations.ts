@@ -15,6 +15,7 @@ export const locations = {
   about: `${locationsBase.about}/`,
   contacts: `${locationsBase.contacts}/`,
   press: `${locationsBase.press}/`,
+  news: `${locationsBase.news}/`,
   buy: `${locationsBase.buy}/`,
   termsAndConditions: `/terms-and-conditions/`,
   privacyPolicy: `/privacy-policy/`,
