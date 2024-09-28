@@ -106,6 +106,18 @@ export const NavMenu = ({ renderLanguageSwitcher }: NavMenuProps) => {
               {t("Press")}
             </Link>
           </li>
+          <li className={classes.listItem}>
+            <Link
+              href={locations.news}
+              className={clsx(
+                classes.link,
+                pathname.includes(locationsBase.news) && classes.active
+              )}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t("News")}
+            </Link>
+          </li>
 
           <li className={classes.listItem}>
             <Link
