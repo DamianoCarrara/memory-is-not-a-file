@@ -49,7 +49,7 @@
                       <h3>{testata}</h3>
                       <p>{description}</p>
                       
-                      <p>{ logo.asset && showLogo(logo, testata)}</p>
+                      <p>{ Object.keys(logo).length > 0  && showLogo(logo, testata)}</p>
                       <p>
                         <a
                           href={link}
