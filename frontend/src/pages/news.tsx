@@ -57,7 +57,6 @@
       </PageTemplate>
     );
   };
-
   export async function getStaticProps() {
     const newses = await client.fetch(groq`
       *[_type == "news"] | order(_createdAt desc)
