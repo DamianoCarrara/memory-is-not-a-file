@@ -35,6 +35,12 @@ export default {
       title: "Photo",
       description: "Cover",
     },
+     {
+      name: "logo",
+      type: "image",
+      title: "Logo",
+      description: "Logo link",
+    },
     {
       name: "pressGallery",
       title: "Immagini",
