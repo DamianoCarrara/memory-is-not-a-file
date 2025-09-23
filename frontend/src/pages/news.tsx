@@ -1,5 +1,6 @@
   declare const dimbox: any;
   import groq from "groq";
+  import Image from "next/image";
   import imageUrlBuilder from "@sanity/image-url";
   import client from "../utils/sanityClient";
   import { PageTemplate } from "../components/PageTemplate/PageTemplate";
@@ -8,6 +9,10 @@
 
   function urlFor(source) {
     return imageUrlBuilder(client).image(source);
+  }
+
+  function showLogo(source, testata) {
+    return <Image src={urlFor(source).url()} alt={testata} className={styles.logolink} width="280" height="200" />
   }
   const News = ({ newses }) => {
     return (
@@ -23,6 +28,7 @@
                 photo = [],
                 description = "",
                 testata = "",
+                logo = [],
                 link  = ""
               }) =>
                 _id && (
@@ -42,11 +48,13 @@
                       <h2>{medium}</h2>
                       <h3>{testata}</h3>
                       <p>{description}</p>
+                      
+                      <p>{ logo.asset && showLogo(logo, testata)}</p>
                       <p>
                         <a
                           href={link}
                           target="_blank">
-                            link
+                            link all'evento
                           </a>
                       </p>
                     </div>
@@ -57,6 +65,7 @@
       </PageTemplate>
     );
   };
+
   export async function getStaticProps() {
     const newses = await client.fetch(groq`
       *[_type == "news"] | order(_createdAt desc)
