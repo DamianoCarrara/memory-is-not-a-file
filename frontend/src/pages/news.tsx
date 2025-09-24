@@ -10,7 +10,6 @@
   function urlFor(source) {
     return imageUrlBuilder(client).image(source);
   }
-
   function showLogo(source, testata) {
     return <Image src={urlFor(source).url()} alt={testata} className={styles.logolink} width="280" height="170" />
   }
