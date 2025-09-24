@@ -71,13 +71,7 @@
   display: block
 }
 
-.flex {
-  display: flex;
-  gap:4rem;
-  flex-wrap: nowrap;
-  align-items: center;
 
-}
 
 .flex > div {
   margin-top: 2rem;
@@ -98,6 +92,14 @@
     gap: 1rem;
     width: 100%;
   }
+
+  .flex {
+  display: flex;
+  gap:4rem;
+  flex-wrap: nowrap;
+  align-items: center;
+
+}
   .mainGalList li .mediumlink {
     width: 70%;
   }
