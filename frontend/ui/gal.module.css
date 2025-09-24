@@ -78,10 +78,7 @@
   white-space: pre-wrap;
 }
 
-.flex > .eventlink {
-  text-align: right;
-  display: block;
-}
+
 
 @media screen and (min-width: 1024px) {
   .mainGalList li,
@@ -99,6 +96,11 @@
   flex-wrap: nowrap;
   align-items: center;
 
+}
+
+.flex > .eventlink {
+  text-align: right;
+  display: block;
 }
   .mainGalList li .mediumlink {
     width: 70%;
