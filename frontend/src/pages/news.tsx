@@ -12,7 +12,7 @@
   }
 
   function showLogo(source, testata) {
-    return <Image src={urlFor(source).url()} alt={testata} className={styles.logolink} width="280" height="200" />
+    return <Image src={urlFor(source).url()} alt={testata} className={styles.logolink} width="280" height="170" />
   }
   const News = ({ newses }) => {
     return (
@@ -29,7 +29,8 @@
                 description = "",
                 testata = "",
                 logo = [],
-                link  = ""
+                link  = "",
+                longdesc = ""
               }) =>
                 _id && (
 
@@ -48,15 +49,22 @@
                       <h2>{medium}</h2>
                       <h3>{testata}</h3>
                       <p>{description}</p>
-                      
-                      <p>{ Object.keys(logo).length > 0  && showLogo(logo, testata)}</p>
-                      <p>
+                      <div className={styles.flex}>
+                      <div>
+                        {longdesc && longdesc}
+                      </div>
+                      <p className={styles.eventlink}>
+                        { Object.keys(logo).length > 0  && showLogo(logo, testata) }
                         <a
                           href={link}
-                          target="_blank">
+                          target="_blank" >
                             link all'evento
                           </a>
+                      
                       </p>
+                      </div>
+                      
+                        
                     </div>
                   </li>
                 )
