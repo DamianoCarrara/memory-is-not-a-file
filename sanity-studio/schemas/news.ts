@@ -42,6 +42,12 @@ export default {
       description: "Logo link",
     },
     {
+      name: "longdesc",
+      type: "text",
+      title: "Descrizione lunga",
+      description: "Long desc",
+    },
+    {
       name: "pressGallery",
       title: "Immagini",
       description: "galleria immagini",
