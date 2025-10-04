@@ -20,6 +20,11 @@ export default {
       type: "string",
     },
     {
+      name: "link",
+      title: "url articolo",
+      type: "string",
+    },
+    {
       name: "slug",
       type: "slug",
       title: "Url press",
