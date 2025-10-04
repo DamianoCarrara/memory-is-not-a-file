@@ -10,6 +10,14 @@
   function urlFor(source) {
     return imageUrlBuilder(client).image(source);
   }
+
+  function showLink(link) {
+    return <p><a href={link} target="_blank">Link</a></p>
+  }
+
+    function showAuthor(autore) {
+    return <p>{autore}</p>
+  }
   const Press = ({ presses }) => {
     return (
       <PageTemplate path="/press">
@@ -24,6 +32,8 @@
                 photo = [],
                 description = "",
                 testata = "",
+                autore = "",
+                data = "",
                 link = "",
                 pressGallery = [],
               }) =>
@@ -43,9 +53,9 @@
                     <div className={styles.mediumlink}>
                       <h2>{testata}</h2>
                       <h3>{medium}</h3>
-                      <p><a href={link && link} target="_blank">Link</a></p>
+                       { link.length > 0 && showLink(link) }
                       <p>{description}</p>
-
+                      { autore.length > 0 && showAuthor(autore)}
                       <ul className={styles.gal}>
                         {pressGallery.map((presgal) => (
                           <li key={presgal}>
