@@ -43,7 +43,7 @@
                     <div className={styles.mediumlink}>
                       <h2>{testata}</h2>
                       <h3>{medium}</h3>
-                      <p><a href={link && link} alt={testata} target="_blank">Link</a></p>
+                      <p><a href={link && link} target="_blank">Link</a></p>
                       <p>{description}</p>
 
                       <ul className={styles.gal}>
