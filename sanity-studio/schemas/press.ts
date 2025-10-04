@@ -15,6 +15,16 @@ export default {
       type: "string",
     },
     {
+      name: "autore",
+      title: "Autore",
+      type: "string",
+    },
+    {
+      name: "data",
+      title: "Data",
+      type: "string",
+    },
+    {
       name: "description",
       title: "Descrizione",
       type: "string",
