@@ -78,6 +78,10 @@
   white-space: pre-wrap;
 }
 
+.dimbox-container {
+    touch-action: manipulation;
+
+}
 
 
 @media screen and (min-width: 1024px) {
