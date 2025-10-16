@@ -5,7 +5,6 @@ import { MarkdownPageData, GetStaticProps } from '../types'
 import { getMarkdownPagesData } from '../views/MarkdownPage/utils'
 
 export default MarkdownPage
-
 interface Props {
   markdownPage: MarkdownPageData
 }
