@@ -82,7 +82,7 @@
 
   export async function getStaticProps() {
     const presses = await client.fetch(groq`
-      *[_type == "press"] | order(_createdAt desc)
+      *[_type == "press"] | order(_updatedAt desc)
     `);
     return {
       props: {
