@@ -10,7 +10,6 @@
   function urlFor(source) {
     return imageUrlBuilder(client).image(source);
   }
-
   function showLink(link) {
     return <p><a href={link} target="_blank">Link</a></p>
   }
