@@ -1,27 +1,29 @@
 .maingal {
   display: flex;
-  justify-items: start;
-  align-items: start;
+  justify-items: flex-start;
+  align-items: flex-start;
 }
 
 .gal {
   margin: 0;
+  margin-bottom: 4rem;
   padding: 0;
   display: flex;
-
-  justify-content: start;
+  justify-content: flex-start;
   list-style: none;
+  flex-wrap: wrap
 }
 
 .gal li {
   width: 180px;
   max-width: 180px;
-  height: 300px;
+  
   object-fit: cover;
 }
 
 .gal li img {
   max-width: 100%;
+  height:auto;
 }
 
 .case {
@@ -30,15 +32,21 @@
 
 .mainGalList, .mainGalListx {
   margin: 1rem auto;
-  align-items: start;
+  align-items: flex-start;
   padding: 1rem;
   gap: 1rem;
   list-style: none;
 }
 
 .mainGalList li, .mainGalListx li {
-  margin-bottom: 6rem;
+  margin-bottom: 0;
+  
 }
+
+.gal .galle { 
+  width: 50% !important;
+}
+
 
 .mainGalListx  {
   gap: 2rem
@@ -46,7 +54,7 @@
 
 .mainGalList li .mediumlink h2,
 .mainGalListx li .mediumlink h2 {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   margin-top: 0;
   color: #f1bb38;
   text-decoration: none;
@@ -85,6 +93,8 @@
 
 
 @media screen and (min-width: 1024px) {
+
+  
   .mainGalList li,
     .mainGalListx li  {
     display: flex;
@@ -93,6 +103,22 @@
     gap: 1rem;
     width: 100%;
   }
+
+  .mainGalList li, .mainGalListx li {
+  margin-bottom: 6rem;
+}
+.mainGalList li .mediumlink h2,
+.mainGalListx li .mediumlink h2 {
+  font-size: 2.6rem;
+ 
+}
+
+.gal li {
+  width: 240px;
+  max-width: 240px;
+  
+  object-fit: cover;
+}
 
   .flex {
   display: flex;
