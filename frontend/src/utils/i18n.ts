@@ -3,7 +3,7 @@ import { Languages } from '../types'
 
 export const getTranslatedPath = (
   path: string,
-  localePathString?: Languages
+  localePathString?: Languages 
 ) => {
   const locale = localePathString ? `/${localePathString}` : ''
 
