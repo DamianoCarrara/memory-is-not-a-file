@@ -23,18 +23,7 @@ export const About: NextPage = () => {
         <PageTitle title={t("title")} />
 
         <Container>
-          <p className={classes.intro}>
-            <Trans i18nKey="intro" ns="about" />
-          </p>
-
-          <p className={classes.intro}>
-            <Trans i18nKey="intro2" ns="about" />
-          </p>
-
-          <p className={classes.intro}>
-            <Trans i18nKey="intro3" ns="about" />
-          </p>
-
+         
           <p className={classes.intro}>Damiano Carrara</p>
 
           <p className={classes.video}>
