@@ -120,6 +120,7 @@
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
+    padding-bottom: 10rem;
   }
 
   .flex > .eventlink {
