@@ -5,8 +5,8 @@
 }
 
 .gal {
-  margin: 0;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -15,8 +15,8 @@
 }
 
 .gal li {
-  width: 160px;
-  max-width: 160px;
+  width: 50%;
+  max-width: 50%;
 
   object-fit: cover;
 }
@@ -32,16 +32,11 @@
 
 .mainGalList,
 .mainGalListx {
-  margin: 1rem auto;
+  margin: 1rem auto 4rem;
   align-items: flex-start;
   padding: 1rem;
   gap: 1rem;
   list-style: none;
-}
-
-.mainGalList li,
-.mainGalListx li {
-  margin-bottom: 10rem;
 }
 
 .gal .galle {
@@ -98,10 +93,6 @@
     width: 100%;
   }
 
-  .mainGalList li,
-  .mainGalListx li {
-    margin-bottom: 6rem;
-  }
   .mainGalList li .mediumlink h2,
   .mainGalListx li .mediumlink h2 {
     font-size: 2.6rem;
