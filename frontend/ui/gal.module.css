@@ -2,7 +2,7 @@
   display: flex;
   justify-items: flex-start;
   align-items: flex-start;
-} 
+}
 
 .gal {
   margin-top: 2rem;
@@ -18,7 +18,7 @@
   width: 50%;
   max-width: 49%;
   object-fit: cover;
-  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .gal li img {
