@@ -111,14 +111,14 @@
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
-    padding-bottom: 10rem;
+    padding-bottom: 16rem;
   }
 
   .flex > .eventlink {
     text-align: right;
     display: block;
     position: absolute;
-    bottom: -4rem;
+    bottom: 0;
     right: 0;
   }
   .mainGalList li .mediumlink {
